@@ -1,8 +1,14 @@
+package org.example;
 public class User {
+    private int userId;
     private String username;
     private String password;
     private String role;
     private String email;
+
+    public int getUserId(){
+        return userId;
+    }
 
     public String getUsername() {
         return username;
@@ -20,7 +26,8 @@ public class User {
         return role;
     }
 
-    public User(String username, String password, String role, String email) {
+    public User(int userId, String username, String password, String role, String email) {
+        this.userId = userId;
         this.username = username;
         this.password = password;
         this.role = role;
